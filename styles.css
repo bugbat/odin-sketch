@@ -9,9 +9,12 @@ box-sizing: inherit;
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #wrapper {
+  background-color: black;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -28,11 +31,9 @@ body {
   background-color: white;
   transition: .5s;
   flex: 1;
-  border: solid 1px black;
-  margin: 1px;
+  border: solid 1px rgb(143, 143, 143);
 }
 
 .block-alt {
-  background-color: blue;
   transition: .5s;
 }
