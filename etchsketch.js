@@ -15,7 +15,16 @@ function makeGrid(x, y) {
     clone = row.cloneNode(true);
     wrapper.appendChild(clone);
   }
-
 }
 
+// swap colors on mouseover
+function setHover() {
+  const blocks = document.querySelectorAll(".block");
+  blocks.forEach(block =>
+    block.addEventListener("mouseover", function() {
+      block.classList.add("block-alt");
+    }));
+  }
+
 makeGrid(16, 16);
+setHover();
